@@ -1,0 +1,42 @@
+// MAGIC EIGHT BALL
+// Purpose: deliver a random fortune
+
+// greeting the user and offering a prompt
+var userName = 'Molly'
+userName ? console.log(`'Administrator, ${userName} detected. What is your query?'`) : console.log("Hello!")
+
+//responding to the prompt with ternary
+var userQuestion = ' "Am I smart?"'
+userQuestion ? console.log(`\nYour query is: ${userQuestion}.`) : console.log("Please input your query.")
+
+//Creating the Eight Ball randomizer
+var randomNumber = Math.floor(Math.random() * 8)
+var eightBall = randomNumber
+
+switch(eightBall) {
+  case 0:
+    console.log('It is certain')
+    break;
+  case 1:
+    console.log('It is decidedly so')
+    break;
+  case 2:
+    console.log('My operations have not fully loaded. Please try again.')
+    break;
+  case 3:
+    console.log(`'In time, ${userName} , all answers will be clear.'`)
+    break;
+  case 4:
+    console.log('My records state "No."')
+    break;
+  case 5:
+    console.log('According to my calculations, it is not probable.')
+    break;
+  case 6:
+    console.log('It is 99.99999% a possibility.')
+    break;
+  case 7:
+    console.log('You are on the right track.')
+
+}
+
